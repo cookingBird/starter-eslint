@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser", // 使用 TypeScript 解析器
+  "parserOptions": {
+    "ecmaVersion": 2021, // 使用 ES2021 的语法
+    "sourceType": "module", // 启用模块化
+    "ecmaFeatures": {
+      "jsx": true // 启用 JSX 语法
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "standard", // standardJs规范
+    // "google", // google规范
+    // "airbnb-base",
+    "airbnb", // airbnb规范
+    "plugin:prettier/recommended" // 包含了config,plugin
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.jsx", "**/*.tsx"],
+      "extends": [
+        "plugin:react/recommended", // React 推荐规则
+        "plugin:jsx-a11y/recommended" // JSX 可访问性推荐规则
+      ],
+      "plugins": ["react"]
+    },
+    {
+      "files": ["**/*.ts", "**/*.tsx"], // 针对所有 TypeScript 文件
+      "parser": "@typescript-eslint/parser", // 使用 TypeScript 解析器
+      "extends": ["plugin:@typescript-eslint/recommended"], // 启用 TypeScript 推荐规则
+      "plugins": ["@typescript-eslint"]
+    },
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/jsx-filename-extension": 0,
+        "@typescript-eslint/explicit-module-boundary-types": 0
+      }
+    },
+    {
+      "files": ["**/*.vue"], // 针对所有 vue 文件
+      "extends": ["plugin:vue/essential", "plugin:vue/recommended"],
+      "plugins": ["vue"]
+    },
+    {
+      "files": ["**/*.test.js", "**/*.test.ts", "**/*.test.tsx"], // 针对所有测试文件
+      "env": {
+        "jest": true // 启用 Jest 测试环境
+      }
+    }
+  ]
+}

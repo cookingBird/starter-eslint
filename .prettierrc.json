@@ -1,0 +1,12 @@
+{
+  "useTabs": false,
+  "vueIndentScriptAndStyle": true,
+  "tabWidth": 2,
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "insertPragma": false,
+  "arrowParens": "always",
+  "bracketSameLine": false,
+  "insertFinalNewline": true
+}

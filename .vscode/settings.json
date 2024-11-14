@@ -1,0 +1,23 @@
+{
+  "prettier.enable": true,
+  "prettier.endOfLine": "lf",
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "eslint.enable": true, // 启用 ESLint 插件
+  "eslint.ignoreUntitled": true,
+  "eslint.run": "onType",
+  "eslint.lintTask.enable": true, // 确保 ESLint 校验的文件类型
+  "editor.formatOnSave": true, // 在保存时格式化代码
+  "editor.codeActions.triggerOnFocusChange": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.stylelint": "always"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ]
+}
