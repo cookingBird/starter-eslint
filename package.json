@@ -1,6 +1,6 @@
 {
   "name": "@eassy/starter-eslint",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint"
