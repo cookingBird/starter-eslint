@@ -15,18 +15,15 @@
     "eslint:recommended",
     "standard", // standardJs规范
     // "google", // google规范
-    // "airbnb-base",
-    "airbnb", // airbnb规范
+    "airbnb-base",
     "plugin:prettier/recommended" // 包含了config,plugin
   ],
   "overrides": [
     {
       "files": ["**/*.jsx", "**/*.tsx"],
       "extends": [
-        "plugin:react/recommended", // React 推荐规则
-        "plugin:jsx-a11y/recommended" // JSX 可访问性推荐规则
-      ],
-      "plugins": ["react"]
+        "airbnb" // airbnb规范
+      ]
     },
     {
       "files": ["**/*.ts", "**/*.tsx"], // 针对所有 TypeScript 文件
