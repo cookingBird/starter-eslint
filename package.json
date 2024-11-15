@@ -13,8 +13,8 @@
   "license": "MIT",
   "description": "starter for eslint",
   "dependencies": {
-    "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
+    "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.x",
