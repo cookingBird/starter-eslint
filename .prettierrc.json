@@ -1,6 +1,6 @@
 {
   "useTabs": false,
-  "vueIndentScriptAndStyle": true,
+  "vueIndentScriptAndStyle": false,
   "tabWidth": 2,
   "endOfLine": "lf",
   "singleQuote": true,

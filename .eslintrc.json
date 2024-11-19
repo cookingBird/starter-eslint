@@ -3,8 +3,9 @@
     "browser": true,
     "es2021": true
   },
-  "parser": "@typescript-eslint/parser", // 使用 TypeScript 解析器
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "requireConfigFile": false,
     "ecmaVersion": 2021, // 使用 ES2021 的语法
     "sourceType": "module", // 启用模块化
     "ecmaFeatures": {

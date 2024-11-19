@@ -1,6 +1,6 @@
 {
   "name": "@eassy/starter-eslint",
-  "version": "8.1.0",
+  "version": "8.1.1",
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint"
@@ -9,6 +9,9 @@
     "starter",
     "eslint"
   ],
+  "bin": {
+    "test": "./bin/test.js"
+  },
   "author": "cookint_bird",
   "license": "MIT",
   "description": "starter for eslint",
